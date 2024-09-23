@@ -12,7 +12,7 @@ class CalculatorApp extends StatelessWidget {
     return MaterialApp(
       title: 'Calculator',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
         useMaterial3: true,
       ),
       home: const CalculatorScreen(),
@@ -174,7 +174,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Your Name\'s Calculator'),
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.yellowAccent,
       ),
       body: Column(
         children: <Widget>[
@@ -201,39 +201,39 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           ),
           Row(
             children: <Widget>[
-              _buildButton('7', Colors.grey),
-              _buildButton('8', Colors.grey),
-              _buildButton('9', Colors.grey),
-              _buildButton('/', Colors.blue),
+              _buildButton('7', Colors.green),
+              _buildButton('8', Colors.green),
+              _buildButton('9', Colors.green),
+              _buildButton('/', Colors.yellow),
             ],
           ),
           Row(
             children: <Widget>[
-              _buildButton('4', Colors.grey),
-              _buildButton('5', Colors.grey),
-              _buildButton('6', Colors.grey),
-              _buildButton('*', Colors.blue),
+              _buildButton('4', Colors.green),
+              _buildButton('5', Colors.green),
+              _buildButton('6', Colors.green),
+              _buildButton('*', Colors.yellow),
             ],
           ),
           Row(
             children: <Widget>[
-              _buildButton('1', Colors.grey),
-              _buildButton('2', Colors.grey),
-              _buildButton('3', Colors.grey),
-              _buildButton('-', Colors.blue),
+              _buildButton('1', Colors.green),
+              _buildButton('2', Colors.green),
+              _buildButton('3', Colors.green),
+              _buildButton('-', Colors.yellow),
             ],
           ),
           Row(
             children: <Widget>[
               _buildButton('C', Colors.red),
-              _buildButton('0', Colors.grey),
+              _buildButton('0', Colors.green),
               _buildButton('=', Colors.green),
-              _buildButton('+', Colors.blue),
+              _buildButton('+', Colors.yellow),
             ],
           ),
           Row(
             children: <Widget>[
-              _buildButton('%', Colors.blue),
+              _buildButton('%', Colors.yellow),
             ],
           ),
         ],
